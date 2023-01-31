@@ -4,8 +4,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Ogani.WebUI.Models.DataContext;
-using Ogani.WebUI.Models.Entity;
+using Ogani.Application.Models.DataContext;
+using Ogani.Application.Models.Entity;
 
 namespace Ogani.WebUI.Areas.Admin.Controllers
 {

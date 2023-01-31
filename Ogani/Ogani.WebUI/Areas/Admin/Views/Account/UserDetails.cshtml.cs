@@ -5,16 +5,16 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using Ogani.WebUI.Models.DataContext;
-using Ogani.WebUI.Models.Entity.Membership;
+using Ogani.Application.Models.DataContext;
+using Ogani.Application.Models.Entity.Membership;
 
 namespace Ogani.WebUI.Areas.Admin.Views.Account
 {
     public class UserDetailsModel : PageModel
     {
-        private readonly Ogani.WebUI.Models.DataContext.OganiDbContext _context;
+        private readonly OganiDbContext _context;
 
-        public UserDetailsModel(Ogani.WebUI.Models.DataContext.OganiDbContext context)
+        public UserDetailsModel(OganiDbContext context)
         {
             _context = context;
         }

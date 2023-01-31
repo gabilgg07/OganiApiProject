@@ -1,0 +1,13 @@
+/Volumes/MySSD/01.Codes/01.VS/01.LessonsCodes/OganiApiProject/Ogani/Ogani.Application/bin/Debug/netcoreapp3.1/Ogani.Application.deps.json
+/Volumes/MySSD/01.Codes/01.VS/01.LessonsCodes/OganiApiProject/Ogani/Ogani.Application/bin/Debug/netcoreapp3.1/Ogani.Application.runtimeconfig.json
+/Volumes/MySSD/01.Codes/01.VS/01.LessonsCodes/OganiApiProject/Ogani/Ogani.Application/bin/Debug/netcoreapp3.1/Ogani.Application.runtimeconfig.dev.json
+/Volumes/MySSD/01.Codes/01.VS/01.LessonsCodes/OganiApiProject/Ogani/Ogani.Application/bin/Debug/netcoreapp3.1/Ogani.Application.dll
+/Volumes/MySSD/01.Codes/01.VS/01.LessonsCodes/OganiApiProject/Ogani/Ogani.Application/bin/Debug/netcoreapp3.1/Ogani.Application.pdb
+/Volumes/MySSD/01.Codes/01.VS/01.LessonsCodes/OganiApiProject/Ogani/Ogani.Application/obj/Debug/netcoreapp3.1/Ogani.Application.csproj.AssemblyReference.cache
+/Volumes/MySSD/01.Codes/01.VS/01.LessonsCodes/OganiApiProject/Ogani/Ogani.Application/obj/Debug/netcoreapp3.1/Ogani.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Volumes/MySSD/01.Codes/01.VS/01.LessonsCodes/OganiApiProject/Ogani/Ogani.Application/obj/Debug/netcoreapp3.1/Ogani.Application.AssemblyInfoInputs.cache
+/Volumes/MySSD/01.Codes/01.VS/01.LessonsCodes/OganiApiProject/Ogani/Ogani.Application/obj/Debug/netcoreapp3.1/Ogani.Application.AssemblyInfo.cs
+/Volumes/MySSD/01.Codes/01.VS/01.LessonsCodes/OganiApiProject/Ogani/Ogani.Application/obj/Debug/netcoreapp3.1/Ogani.Application.csproj.CoreCompileInputs.cache
+/Volumes/MySSD/01.Codes/01.VS/01.LessonsCodes/OganiApiProject/Ogani/Ogani.Application/obj/Debug/netcoreapp3.1/Ogani.Application.dll
+/Volumes/MySSD/01.Codes/01.VS/01.LessonsCodes/OganiApiProject/Ogani/Ogani.Application/obj/Debug/netcoreapp3.1/Ogani.Application.pdb
+/Volumes/MySSD/01.Codes/01.VS/01.LessonsCodes/OganiApiProject/Ogani/Ogani.Application/obj/Debug/netcoreapp3.1/Ogani.Application.genruntimeconfig.cache

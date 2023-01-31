@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
-using Ogani.WebUI.Models.DataContext;
-using Ogani.WebUI.Models.Entity;
+using Ogani.Application.Models.DataContext;
+using Ogani.Application.Models.Entity;
 
 namespace Ogani.WebUI.AppCode.Middlewares
 {

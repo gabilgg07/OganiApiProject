@@ -3,7 +3,7 @@ using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Ogani.WebUI.AppCode.Types;
-using Ogani.WebUI.Models.DataContext;
+using Ogani.Application.Models.DataContext;
 
 namespace Ogani.WebUI.AppCode.ViewComponents
 {

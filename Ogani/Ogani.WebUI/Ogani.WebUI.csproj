@@ -18,8 +18,6 @@
     <None Remove="Microsoft.EntityFrameworkCore.SqlServer" />
     <None Remove="Microsoft.EntityFrameworkCore.Tools" />
     <None Remove="Microsoft.VisualStudio.Web.CodeGeneration.Design" />
-    <None Remove="Models\Entity\" />
-    <None Remove="Models\DataContext\" />
     <None Remove="Pomelo.EntityFrameworkCore.MySql" />
     <None Remove="AppCode\ViewComponents\" />
     <None Remove="Views\Shared\Components\" />
@@ -30,9 +28,7 @@
     <None Remove="AppCode\TagHelpers\" />
     <None Remove="jQuery" />
     <None Remove="Microsoft.Web.LibraryManager.Build" />
-    <None Remove="AppCode\Extensions\" />
     <None Remove="MailKit" />
-    <None Remove="AppCode\DataAnnotation\" />
     <None Remove="Areas\" />
     <None Remove="Areas\Admin\" />
     <None Remove="Areas\Admin\Controllers\" />
@@ -46,13 +42,13 @@
     <None Remove="AppCode\Providers\" />
     <None Remove="Microsoft.AspNetCore.Identity.EntityFrameworkCore" />
     <None Remove="Microsoft.Extensions.Identity.Stores" />
-    <None Remove="Models\Entity\Membership\" />
     <None Remove="Areas\Admin\Models\ViewModel\" />
     <None Remove="Areas\Admin\Views\Account\" />
     <None Remove="AppCode\Middlewares\" />
     <None Remove="AppCode\Resources\" />
     <None Remove="AppCode\Resources\UserResource\" />
     <None Remove="AppCode\Resources\AdminResource\" />
+    <None Remove="Microsoft.Extensions.Identity.Core" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
@@ -67,8 +63,6 @@
     <Folder Include="Views\Home\" />
     <Folder Include="Views\Shop\" />
     <Folder Include="Views\Blog\" />
-    <Folder Include="Models\Entity\" />
-    <Folder Include="Models\DataContext\" />
     <Folder Include="AppCode\ViewComponents\" />
     <Folder Include="Views\Shared\Components\" />
     <Folder Include="Views\Shared\Components\Category\" />
@@ -77,8 +71,6 @@
     <Folder Include="AppCode\Types\" />
     <Folder Include="AppCode\TagHelpers\" />
     <Folder Include="wwwroot\uploads\images\blogs\" />
-    <Folder Include="AppCode\Extensions\" />
-    <Folder Include="AppCode\DataAnnotation\" />
     <Folder Include="Areas\" />
     <Folder Include="Areas\Admin\" />
     <Folder Include="Areas\Admin\Controllers\" />
@@ -95,7 +87,6 @@
     <Folder Include="Views\Shared\Components\RecentNews\" />
     <Folder Include="AppCode\Providers\" />
     <Folder Include="wwwroot\uploads\images\authors\" />
-    <Folder Include="Models\Entity\Membership\" />
     <Folder Include="Areas\Admin\Models\ViewModel\" />
     <Folder Include="Areas\Admin\Views\Account\" />
     <Folder Include="AppCode\Middlewares\" />
@@ -116,13 +107,13 @@
     <Content Remove="wwwroot\uploads\images\authors\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.31" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.31">
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.32" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.32">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.31" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.31">
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.32" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.32">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
@@ -131,9 +122,10 @@
     <PackageReference Include="jQuery" Version="3.6.1" />
     <PackageReference Include="Microsoft.Web.LibraryManager.Build" Version="2.1.175" />
     <PackageReference Include="MailKit" Version="3.4.3" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.25" />
-    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.31" />
-    <PackageReference Include="Microsoft.Extensions.Identity.Stores" Version="3.1.31" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.32" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.32" />
+    <PackageReference Include="Microsoft.Extensions.Identity.Stores" Version="3.1.32" />
+    <PackageReference Include="Microsoft.Extensions.Identity.Core" Version="3.1.32" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Update="AppCode\Resources\UserResource\LayoutResource.resx">
@@ -194,5 +186,10 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ogani.Application\Ogani.Application.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
   </ItemGroup>
 </Project>

@@ -5,8 +5,8 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
-using Ogani.WebUI.Models.DataContext;
-using Ogani.WebUI.Models.Entity;
+using Ogani.Application.Models.DataContext;
+using Ogani.Application.Models.Entity;
 using Ogani.WebUI.Models.ViewModel;
 
 namespace Ogani.WebUI.Controllers

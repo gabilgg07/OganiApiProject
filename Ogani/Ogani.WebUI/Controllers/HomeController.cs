@@ -4,9 +4,9 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Ogani.WebUI.AppCode.Extensions;
-using Ogani.WebUI.Models.DataContext;
-using Ogani.WebUI.Models.Entity;
+using Ogani.Application.Extensions;
+using Ogani.Application.Models.DataContext;
+using Ogani.Application.Models.Entity;
 
 namespace Ogani.WebUI.Controllers
 {

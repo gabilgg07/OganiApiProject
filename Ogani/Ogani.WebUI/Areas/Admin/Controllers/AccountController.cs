@@ -6,8 +6,8 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Ogani.WebUI.Areas.Admin.Models.ViewModel;
-using Ogani.WebUI.Models.DataContext;
-using Ogani.WebUI.Models.Entity.Membership;
+using Ogani.Application.Models.DataContext;
+using Ogani.Application.Models.Entity.Membership;
 
 namespace Ogani.WebUI.Areas.Admin.Controllers
 {
@@ -132,7 +132,6 @@ namespace Ogani.WebUI.Areas.Admin.Controllers
 
             if (selected)
             {
-#warning policy set etmek ucun
 
                 if (await db.UserRoles.AnyAsync(ur => ur.UserId == userId && ur.RoleId == roleId))
                 {
@@ -153,7 +152,6 @@ namespace Ogani.WebUI.Areas.Admin.Controllers
             }
             else
             {
-#warning policy-den cixartmaq ucun
 
                 if (userId == UserId)
                 {
@@ -212,7 +210,6 @@ namespace Ogani.WebUI.Areas.Admin.Controllers
 
             if (selected)
             {
-#warning role set etmek ucun
 
                 if (db.UserClaims.Any(uc => uc.UserId == userId &&
                 uc.ClaimType.Equals(policyName) &&
@@ -236,7 +233,6 @@ namespace Ogani.WebUI.Areas.Admin.Controllers
             }
             else
             {
-#warning roldan cixartmaq ucun
 
                 var claim = await db.UserClaims.FirstOrDefaultAsync(uc =>
                 uc.UserId == userId &&

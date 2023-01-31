@@ -17,27 +17,10 @@ namespace Ogani.WebUI
 
             if (policies == null)
             {
-#warning bu hissede biz actionlarin uzerinden policy-name-leri gotururuk:
 
                 var controllers = Assembly.GetExecutingAssembly().GetTypes()
                     .Where(t => typeof(Controller).IsAssignableFrom(t))
                     .ToList();
-
-                //var actions = controllers.SelectMany(c => c.GetMethods()
-                //.Where(m => m.IsDefined(typeof(AuthorizeAttribute)) &&
-                //!m.IsDefined(typeof(NonActionAttribute))
-                //)).ToList();
-
-                //var attributes = actions.SelectMany(m => m.GetCustomAttributes(true)
-                //.Where(a => typeof(AuthorizeAttribute).IsInstanceOfType(a)
-                //&& !string.IsNullOrWhiteSpace((a as AuthorizeAttribute)?.Policy)))
-                //    .ToList();
-
-                //policies = attributes
-                //    .Select(a => (a as AuthorizeAttribute)?.Policy)
-                //    .Distinct()
-                //    .ToArray();
-
                 policies = controllers.SelectMany(c => c.GetMethods()
                 .Where(m => m.IsDefined(typeof(AuthorizeAttribute)) &&
                 !m.IsDefined(typeof(NonActionAttribute))))

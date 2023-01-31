@@ -7,8 +7,8 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using Ogani.WebUI.Models.DataContext;
-using Ogani.WebUI.Models.Entity.Membership;
+using Ogani.Application.Models.DataContext;
+using Ogani.Application.Models.Entity.Membership;
 
 namespace Ogani.WebUI.Areas.Admin.Controllers
 {

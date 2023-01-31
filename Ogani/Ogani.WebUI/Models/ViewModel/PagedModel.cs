@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using Microsoft.AspNetCore.Html;
 using Microsoft.AspNetCore.Mvc;
-using Ogani.WebUI.Models.Entity;
+using Ogani.Application.Models.Entity;
 
 namespace Ogani.WebUI.Models.ViewModel
 {

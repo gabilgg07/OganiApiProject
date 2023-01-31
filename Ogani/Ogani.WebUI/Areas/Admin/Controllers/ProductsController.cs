@@ -9,8 +9,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using Ogani.WebUI.Models.DataContext;
-using Ogani.WebUI.Models.Entity;
+using Ogani.Application.Models.DataContext;
+using Ogani.Application.Models.Entity;
 using Ogani.WebUI.Models.ViewModel;
 
 namespace Ogani.WebUI.Areas.Admin.Controllers
