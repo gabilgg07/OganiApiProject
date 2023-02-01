@@ -1,35 +1,27 @@
-﻿<Properties StartupConfiguration="{320C438B-BE71-483D-8985-3514117EA629}|Default">
+﻿<Properties StartupConfiguration="{0A0150A9-87F4-4436-9F25-F746321903C7}|Default">
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Ogani.WebApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Ogani.WebUI/Startup.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Ogani.Application/Models/DataContext/OganiDbSeed.cs">
     <Files>
-      <File FileName="Ogani.WebUI/Models/DataContext/OganiDbContext.cs" Line="45" Column="1" />
-      <File FileName="Ogani.WebUI/Startup.cs" Line="75" Column="46" />
-      <File FileName="Ogani.WebUI/Models/DataContext/OganiDbSeed.cs" Line="38" Column="1" />
-      <File FileName="Ogani.WebUI/Areas/Admin/Models/ViewModel/SignInModel.cs" Line="7" Column="2" />
-      <File FileName="Ogani.WebUI/Areas/Admin/Controllers/AccountController.cs" Line="92" Column="31" />
-      <File FileName="Ogani.WebUI/Program.cs" Line="16" Column="10" />
+      <File FileName="Ogani.Application/Models/DataContext/OganiDbContext.cs" Line="78" Column="1" />
+      <File FileName="Ogani.Application/Models/DataContext/OganiDbSeed.cs" Line="28" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Ogani" expanded="True">
-            <Node name="Ogani.WebUI" expanded="True">
-              <Node name="Areas" expanded="True">
-                <Node name="Admin" expanded="True">
-                  <Node name="Controllers" expanded="True" />
-                  <Node name="Models" expanded="True">
-                    <Node name="ViewModel" expanded="True" />
-                  </Node>
+            <Node name="Ogani.Application" expanded="True">
+              <Node name="Models" expanded="True">
+                <Node name="DataContext" expanded="True">
+                  <Node name="OganiDbSeed.cs" selected="True" />
                 </Node>
               </Node>
-              <Node name="Models" expanded="True">
-                <Node name="DataContext" expanded="True" />
-                <Node name="Entity" expanded="True" />
-              </Node>
-              <Node name="Startup.cs" selected="True" />
             </Node>
+            <Node name="Ogani.WebUI" expanded="True" />
           </Node>
         </State>
       </Pad>
