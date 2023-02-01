@@ -35,8 +35,6 @@ namespace Ogani.Application.Models.DataContext
 
         public DbSet<Blog> Blogs { get; set; }
 
-		//public DbSet<Comment> Comments { get; set; }
-
         public DbSet<BlogTagBlog> BlogTagBlogs { get; set; }
 
 		public DbSet<Subscribe> Subscribes { get; set; }

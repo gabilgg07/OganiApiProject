@@ -49,6 +49,7 @@
     <None Remove="AppCode\Resources\UserResource\" />
     <None Remove="AppCode\Resources\AdminResource\" />
     <None Remove="Microsoft.Extensions.Identity.Core" />
+    <None Remove="MediatR.Extensions.Microsoft.DependencyInjection" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
@@ -126,6 +127,7 @@
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.32" />
     <PackageReference Include="Microsoft.Extensions.Identity.Stores" Version="3.1.32" />
     <PackageReference Include="Microsoft.Extensions.Identity.Core" Version="3.1.32" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Update="AppCode\Resources\UserResource\LayoutResource.resx">

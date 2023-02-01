@@ -1,20 +1,35 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Ogani.Application.Models.DataContext;
 
 namespace Ogani.WebApi
 {
     public class Startup
     {
+        public IConfiguration Configuration { get; set; }
+
+        public Startup(IConfiguration configuration)
+        {
+            this.Configuration = configuration;
+        }
+
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            services.AddDbContext<OganiDbContext>(cfg =>
+            {
+                cfg.UseSqlServer(Configuration.GetConnectionString("cString"));
+            });
+
+            services.AddMediatR(AppDomain.CurrentDomain.GetAssemblies().Where(a => a.FullName.StartsWith("Ogani")).ToArray() );
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

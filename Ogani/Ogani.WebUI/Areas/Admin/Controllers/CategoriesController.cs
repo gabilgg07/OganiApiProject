@@ -13,17 +13,17 @@ namespace Ogani.WebUI.Areas.Admin.Controllers
     [Area("Admin")]
     public class CategoriesController : Controller
     {
-        readonly OganiDbContext _context;
+        readonly OganiDbContext db;
 
-        public CategoriesController(OganiDbContext context)
+        public CategoriesController(OganiDbContext db)
         {
-            this._context = context;
+            this.db = db;
         }
 
         [Authorize(Policy = "admin.categories.index")]
         public async Task<IActionResult> Index()
         {
-            var categories = await _context.Categories
+            var categories = await db.Categories
                 .Where(c => c.DeletedDate == null)
                 .ToListAsync();
             ViewBag.ToastrMsg = TempData["ToastrMsg"];
@@ -38,7 +38,7 @@ namespace Ogani.WebUI.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var category = await _context.Categories
+            var category = await db.Categories
                 .FirstOrDefaultAsync(c => c.Id == id && c.DeletedDate == null);
 
             if (category == null)
@@ -62,8 +62,8 @@ namespace Ogani.WebUI.Areas.Admin.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.Add(category);
-                await _context.SaveChangesAsync();
+                db.Add(category);
+                await db.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
             return View(category);
@@ -77,7 +77,7 @@ namespace Ogani.WebUI.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var category = await _context.Categories.FindAsync(id);
+            var category = await db.Categories.FindAsync(id);
 
             if (category == null)
             {
@@ -101,8 +101,8 @@ namespace Ogani.WebUI.Areas.Admin.Controllers
             {
                 try
                 {
-                    _context.Update(category);
-                    await _context.SaveChangesAsync();
+                    db.Update(category);
+                    await db.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -129,7 +129,7 @@ namespace Ogani.WebUI.Areas.Admin.Controllers
         //        return NotFound();
         //    }
 
-        //    var category = await _context.Categories
+        //    var category = await db.Categories
         //        .FirstOrDefaultAsync(c => c.Id == id && c.DeletedDate == null);
 
         //    if (category == null)
@@ -154,7 +154,7 @@ namespace Ogani.WebUI.Areas.Admin.Controllers
                 });
             }
 
-            var category = await _context.Categories.FindAsync(id);
+            var category = await db.Categories.FindAsync(id);
 
             if (category == null)
             {
@@ -168,7 +168,7 @@ namespace Ogani.WebUI.Areas.Admin.Controllers
 
             category.DeletedDate = DateTime.Now;
 
-            await _context.SaveChangesAsync();
+            await db.SaveChangesAsync();
 
             return Json(new
             {
@@ -189,7 +189,7 @@ namespace Ogani.WebUI.Areas.Admin.Controllers
         [NonAction]
         private bool CategoryExists(int id)
         {
-            return _context.Categories.Any(e => e.Id == id && e.DeletedDate == null);
+            return db.Categories.Any(e => e.Id == id && e.DeletedDate == null);
         }
 
     }
