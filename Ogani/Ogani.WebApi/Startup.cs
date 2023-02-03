@@ -39,6 +39,8 @@ namespace Ogani.WebApi
                 app.UseDeveloperExceptionPage();
             }
 
+            app.SeedMembership().Seed();
+
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>

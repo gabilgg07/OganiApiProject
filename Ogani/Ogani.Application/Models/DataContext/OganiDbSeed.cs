@@ -5,11 +5,10 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using Ogani.Application.Models.DataContext;
 using Ogani.Application.Models.Entity;
 using Ogani.Application.Models.Entity.Membership;
 
-namespace Ogani.WebUI.Models.DataContext
+namespace Ogani.Application.Models.DataContext
 {
     public static class OganiDbSeed
     {

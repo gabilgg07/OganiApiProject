@@ -8,10 +8,10 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Ogani.WebUI.AppCode.Middlewares;
-using Ogani.WebUI.AppCode.Providers;
 using Ogani.Application.Models.DataContext;
 using Ogani.Application.Models.Entity.Membership;
+using Ogani.WebUI.AppCode.Middlewares;
+using Ogani.WebUI.AppCode.Providers;
 
 namespace Ogani.WebUI
 {
@@ -97,6 +97,7 @@ namespace Ogani.WebUI
                 app.UseDeveloperExceptionPage();
             }
 
+            app.SeedMembership().Seed();
 
             app.UseStaticFiles();
             app.UseRouting();
